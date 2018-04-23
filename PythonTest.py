@@ -13,11 +13,11 @@ mygame = 'kingdoms'
 
 # revenues sums for each country, problem when change LIMIT ?!!!
 request = {
-        "FIELDS": ["server_date","users()"],
+        "FIELDS": ["client_date","users()"],
         "TABLE": mygame,
-        "GROUPBY": ["server_date"],
+        "GROUPBY": ["client_date"],
         "WHERE": ["final.qa = 0"],
-        "ORDERBY": ["server_date DESC"],
+        "ORDERBY": ["client_date DESC"],
             }
 df = dba.query_dataframe(request)
 print(df.head(n=10))
