@@ -9,7 +9,7 @@ date = ("%d-%.2d-%.2d %.2dh%.2d" % (now.year, now.month, now.day, now.hour, now.
 mygame = "asp8"
 print('Today is ' + str(date))
 
-mygame = 'kingdoms'
+mygame = 'mlp'
 
 
 request = {
